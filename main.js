@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    const cards = document.querySelectorAll('.glass-panel');
+    const cards = document.querySelectorAll('.glass-panel:not(.zillow-theme)');
     
     // Smooth 3D tilt effect for non-touch devices
     if(window.matchMedia("(pointer: fine)").matches) {

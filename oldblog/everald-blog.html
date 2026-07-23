@@ -1,1 +1,331 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Dom Del'Amaeruv | Archiv 2007–2008</title>
+    <style>
+        :root {
+            --bg-color: #0f1115;
+            --card-bg: rgba(22, 27, 34, 0.85);
+            --border-color: #2a3241;
+            --accent-gold: #d4af37;
+            --accent-glow: rgba(212, 175, 55, 0.15);
+            --text-main: #d1d5db;
+            --text-muted: #9ca3af;
+            --text-bright: #f3f4f6;
+        }
 
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.8;
+            padding: 40px 20px;
+            background-image: 
+                radial-gradient(circle at 50% 0%, rgba(30, 38, 54, 0.5) 0%, transparent 75%),
+                linear-gradient(to bottom, #0a0c0f, #0f1115);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 780px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding-bottom: 40px;
+            margin-bottom: 50px;
+            border-bottom: 1px solid var(--border-color);
+            position: relative;
+        }
+
+        header::after {
+            content: "◆";
+            position: absolute;
+            bottom: -11px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--bg-color);
+            padding: 0 10px;
+            color: var(--accent-gold);
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--accent-gold);
+            letter-spacing: 2px;
+            font-weight: normal;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px var(--accent-glow);
+        }
+
+        .subtitle {
+            font-style: italic;
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+
+        .archive-note {
+            background-color: rgba(212, 175, 55, 0.05);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 6px;
+            padding: 12px 20px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+            text-align: center;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        .post {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 35px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(5px);
+            transition: border-color 0.3s ease;
+        }
+
+        .post:hover {
+            border-color: rgba(212, 175, 55, 0.4);
+        }
+
+        .post-header {
+            margin-bottom: 20px;
+            border-bottom: 1px dashed var(--border-color);
+            padding-bottom: 15px;
+        }
+
+        .post-date {
+            font-size: 0.85rem;
+            color: var(--accent-gold);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: system-ui, -apple-system, sans-serif;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .post-title {
+            font-size: 1.6rem;
+            color: var(--text-bright);
+            font-weight: normal;
+        }
+
+        .post-body {
+            font-size: 1.05rem;
+            color: var(--text-main);
+            text-align: justify;
+        }
+
+        .post-body p {
+            margin-bottom: 1.2em;
+        }
+
+        .post-body p:last-child {
+            margin-bottom: 0;
+        }
+
+        .post-meta {
+            margin-top: 25px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-style: italic;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .separator {
+            text-align: center;
+            color: var(--border-color);
+            margin: 20px 0;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        footer a {
+            color: var(--accent-gold);
+            text-decoration: none;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 20px 12px;
+            }
+            .post {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            .post-title {
+                font-size: 1.3rem;
+            }
+            .post-body {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Dom Del'Amaeruv</h1>
+        <div class="subtitle">„Je mnoho příležitostí na světě, některé je třeba zdolat, o jiné je třeba se podělit.“</div>
+    </header>
+
+    <div class="archive-note">
+        🛡️ Osobní časová kapsle & archiv RP deníku (Ultima Online – Temný Ráj) z let 2007–2008.
+    </div>
+
+    <!-- PŘÍSPĚVEK 1 -->
+    <article class="post">
+        <div class="post-header">
+            <span class="post-date">15. ledna 2008</span>
+            <h2 class="post-title">Rukověť válečníka (ztracenné denníky)</h2>
+        </div>
+        <div class="post-body">
+            <p><em>(dochovalý zápisek)</em><br>
+            ... zlá doba. Zemi napadly příšery o jakých se mi do té doby ani nesnilo. Kde jsou pro bohy ty časy, kdy jediným nepřítelem byl jeden troll někde na mostě. Kde jsou vlastně bohové?! Viděl jsem jak se otevřela skála a z ní vyletli draci, v podzemí jsem viděl obrovské démony, kteří se snažili dostat na povrch. Města jsou neustále okupována nájezdy hord a v lesích se prohánějí zabijáci bez slitování. Nikde není bezpečno...</p>
+            
+            <p><em>(dále je text nečitelný a pokračuje až)</em><br>
+            už mi tady toho nezbývá mnoho, o většinu věcí, které jsem nasbíral při svých putováních jsem přišel za posledních několik útoků. Několik přátel jsem už viděl mrtvých a ostatní, kteří můžou pomáhají kde se dá. Jedinou nadějí je snad bojovat ve skupině, ale kdo by byl tak šílený...</p>
+            
+            <p><em>(několik stránek je spálených a text pokračuje)</em><br>
+            ... přijat a rozšíril jsem řady démonobijců. Smíšená skupina lidí, krytá guildou a bojující proti všemu co ohrožuje životy lidí. Jsem rád, že jsem s nima. Několik mých přátel sem přišlo již dříve a další ještě přicházejí a s ostatníma jsem se rychle seznámil. Sice ještě bude chvíli trvat než někam vyrazíme společně, ale jsme k tomu vedení a cvičení zdatnýma lidma. Konečně se cítím trochu bezpečněji...</p>
+            
+            <p><em>- autor si vyžádal dále text nezveřejňovat proto obrátíme pár stránek</em></p>
+            
+            <p>Boje, krev, nestvůry a všechno pořád dokola není zropvna moc povzbudivá kombinace. Sice jsme si čím dál tím jistější boji ve skupine, ale je v tom i zrada. Stále častěji se lidé pouštěji do sebevražedných akcí, jakoby se chtěli zbavit všeho co za tu dobu viděli. Ve skupině vznikají rozpory a když nezabíjíme nestvůry a zplozence pekel, máme všichni co dělat, abychom se nepozabíjeli navzájem. Myslím, že i mě chvíle odpočinku příjde vhod.</p>
+            
+            <p>Je čas na chvíli odložit meč a podívat se za co vlatně bojujeme.</p>
+        </div>
+        <div class="post-meta">
+            <span>Autor: Everald Del'Amaer</span>
+            <span>02:42</span>
+        </div>
+    </article>
+
+    <!-- PŘÍSPĚVEK 2 -->
+    <article class="post">
+        <div class="post-header">
+            <span class="post-date">23. srpna 2007</span>
+            <h2 class="post-title">Intermezzo</h2>
+        </div>
+        <div class="post-body">
+            <p>Sláva a čest. Vítězství a peníze. Po mnoho dalších dnů, spolu Jererigan a Bigguns podnikali bojové výpravy. Ať již to byl troll na mostě či skupinka trollů na rozcestí, Ettinové v lese i strážní vížky obsazené bandami skřetů, banditů a jiných živlů. Když už jim tohle nestačilo, nebo chtěli zažít větší vzrušení, podnikali nájezdy na tábory temných elfů. Sice častokrát utekli jen živí jen díky náhodě, ale i tak se jejich měšce plnily a oni se bezstarostně potulovali krajem.</p>
+            <p>Život jaký znali však měl již zanedlouho skončit.</p>
+        </div>
+        <div class="post-meta">
+            <span>Autor: Everald Del'Amaer</span>
+            <span>00:52</span>
+        </div>
+    </article>
+
+    <!-- PŘÍSPĚVEK 3 -->
+    <article class="post">
+        <div class="post-header">
+            <span class="post-date">23. srpna 2007</span>
+            <h2 class="post-title">Seznámení</h2>
+        </div>
+        <div class="post-body">
+            <p>Hodina za hodinou, den za dnem. Pořád sám a ztracen v obrovském světě, nechápajíc zákony a zákonitosti. Jedinou útěchou mu byla jeho zbraň, jediné co ho zahřívalo jeho brň.</p>
+            <p>Po dlouhém putování bez cíle, narazil na oplocené místo z něhož se ozývaly výkřiky radosti, místy utrpení, vzlykot i příšerný nelidský řev. Byl to hřbitov, místo na němž mrtví sní svůj věčný sen, nyní však zrudně znetvořené, plné chodících mrtvol. S náhlým odhodláním doběhl podél plotu až k brance vedoucí dovnitř tohoto pekla, ještě za běhu si nasadil přilbu, ze zad stáhl štít a rychlým, zkušeným pohybem tasil meč.</p>
+            <p>A první ranou ťal.<br>
+            „Díky kamaráde.“, řekla postava v kápi, před kterou již jen ležela hromada kostí. V tu chvíli se s poza rohu vynořila průhledná bytost, obličej zřivený smrtí, ústa jenž se bezhlesně otvírala. Za ní člověk, či snad to jim bývalo a co zem již z části pohltila. A nakonec hrůzu uzavírajíc, vyšly další kosti, ač sestavené do podoby člověka nebylo na nich nic než prach a hlína. „Ó bohové ...“ ozvalo se z několika lidí co stáli poblíž branky, připraveni udeřit nebo utéct. „Na hřbitově je lich“, pronesla klidným hlasem postava v kápi, „nečisté stvoření jež ovládá tyto živé-mrtvé.“</p>
+            <p>V tu chvíli hlouček lidí prořídl. Ti co zůstali vydali se pomalým krokem vstříc smrti. Postupovali pomalu, bili se urputně, ale k lichovi, dorazili jen nemnozí.</p>
+            <p>Hrobku poznali okamžitě, z žádné jiné se neozývalo mumlání, místy proložené šíleným chechotem a zaříkáním z něhož se šířila hrůza. Jererigan zpomalil a obrátil se na postavu vedle sebe, na klerika jemu neznámého boha, nyní již bez kápě a pokynul. I on se zastavil a za ním dva s luky v rukou.</p>
+            <p>V zápětí se ozvala strašná rána, hrobku osvětlil blesk a ze dveří vyletěl člověk. Klerik okamžitě doběhl k němu, prohlédl ho, zamumlal několik slov a bojovník otevřel oči. Během chvíle co byl obvazován, prozradil, že je členem řádu paladinů a vydal se získat slávu a přízeň bohů ničením nečistých.</p>
+            <p>Po chvíli uvažování a debaty se dohodli na plánu. Když vyráželi, klerik jim ještě požehnal a oni plni nové síly vstoupili do hrobky.</p>
+            <p>Nikdo z nich už neví jak dlouho se bili. Nikdo neví kdo zasadil poslední ránu. Byli rádi, když ta děsivá můra skončila. Díky klerikovi a jeho umění, nikdo z nich nezemřel, i když každý z nich měl mockrát namále díky lichovým bleskům. V hrobce si obvázali zranění, sebrali lichovy poklady a vydali se zpět k brance, lučištníci se vydali ještě prozkoumat zbytek hřbitova, ale už byl klid.</p>
+            <p>„Jmenuji se Jererigan“, představil se válečník a podal ruku klerikovi, „Bigguns, těší mě“ odpověděl on. A noví známí se vydali pěšinkou do Británie.</p>
+        </div>
+        <div class="post-meta">
+            <span>Autor: Everald Del'Amaer</span>
+            <span>00:49</span>
+        </div>
+    </article>
+
+    <!-- PŘÍSPĚVEK 4 -->
+    <article class="post">
+        <div class="post-header">
+            <span class="post-date">19. dubna 2007</span>
+            <h2 class="post-title">Pád Dómu Del'Amaerova</h2>
+        </div>
+        <div class="post-body">
+            <p>Prásk. Chodbu oslnilo jasné světlo. Vzápětí po něm přišla vlna horka a s ní popílek a prach.<br>
+            Prásk. Drahocenné obrazy a sošky podél zdi se rozprskly do všech stran.<br>
+            Prásk. Na konci chodby před kovovými dveřmi se tlačí dvě postavy. Vlastně tři, jedna je skrytá za prvníma dvěma.<br>
+            Prásk. Na druhém konci chodby se míhají temné stíny. Důslednější pozorovatel by viděl i těla těchto stínů.<br>
+            Prásk. Třetí postava se znovu postavila a hodila jakýsik předmět. Prásk. Ha, dělobuchy.<br>
+            Prásk. Temné postavy se stáhly před výbuchy a poletujícími kusy zdiva odpadávajícím ze stěn a stropu.<br>
+            Prásk. Třetí postava zatřepala hlavou a něco křičí na ostatní. Třetí postava se otočila ke dveřím a vytáhla svazek klíčů.<br>
+            Z druhého konce chodby se pomalu začaly přibližovat postavy. Svist. Jedna má luk. Svist. Pokouší se střílet, ale přesnému cílení ji brání stále ještě poletující prach.<br>
+            Jedna z postav u dveří se narovnala pozvedla katanu a nastavila střele štít. Za ním se postavila další postava, pozvedla ruce, vykřikla pár slov a chodbu osvětlil jasný plamen.<br>
+            Jeho vřelý pozdrav vyšel a jeden z temných se proměnil v živoucí pochodeň. Osvětlil tak své druhy. Bojovník i mág jen společně vydechli, když uviděli své nepřátele. Tedy jejich elitní vrahy. Šedočerný plášť s kápí ukrývající beztvarý obličej se zářícíma, rudýma očima. Krvavá horda, nebo Temní. Jeden z nich ťal do hořícího druha a ten bez hlesu spadl mrtvý na zem. Zbývající vrazi se rozeběhli chodbou, zahodili luky a vytáhli malé zakřivené čepele.<br>
+            Cvak. Povolil zámek. Třetí postava se postavila a opřela se do dveří.<br>
+            Bojovník se jen ohlédl, ale hned se zpátky soustředil na přibíhající vrahy.<br>
+            Mág opět promluvil.<br>
+            Mezi oběma skupinami se objevila kamenná zeď, jakoby však ani nebyla, během chvíle se začala rozpadat.<br>
+            „Pojďte“ zvolal mág, chytl bojovníka za rameno a první postavu vtlačil do místnosti za dveřmi.<br>
+            „Jere, zavři dveře a zataras je“ promluvil mág a běžěl na druhý konec místnosti k hromadě knih v dřevěných policích.<br>
+            „Dekorasi, vyčisti tam ten kout“ ukázal mág na jeden roh, „a pak se tam postavte!“ houkl ještě na ně a rychle se prohraboval pradávnými svitky.<br>
+            Mezitím Jererigan zablokoval dveře a poslouchal co se děje na druhém konci.<br>
+            Ozvala se rána na dveře. „Everalde,“ vykřikl Jererigan, „rychle to najdi, ty dveře toho moc nevydrží!“. „Snažím se!“ oplatil mu Everald. „Mám ho! Rychle do toho rohu!“<br>
+            Všichni tři se tlačili na malé plošce, Everald před sebou držel zažloutlý pergamen a předčítal z něj.<br>
+            Další rána, jedna za druhou, až nakonec se dveře prolomily a odlétly. Dovnitř vběhli vrazi. V tu chvíli se okolo tří objevila namodralá záře a skupinka zmizela.</p>
+
+            <div class="separator">***</div>
+
+            <p style="text-align: center; font-style: italic; color: var(--accent-gold);">Nový svět, nové příležitosti</p>
+
+            <p>Kdesi hluboko v lese, na malé mýtince, jedna z měsíčních bran, ta nejbližší Británii, slabě zablikala, pohasla a nakonec se silně rozzářila.<br>
+            V příšeří lesa бы náhodný cestovatel uviděl jen silnou záři a obrysy tří postav. V lese ovšem nikdo nebyl. Jedinými svědky jejich příchodu se stala němá lesní zvěř. Tak přišli synové slavného Dómu Del'Amaerova do Temného Ráje.<br>
+            Jen co z brány vystoupili, pohasla a stala se opět tím, čím byla. Bratři se chvíli pozastavili u brány, jen mlčky se rozloučili se svým domovem a pomalu se vydali do lesa najít vodu a smýt ze sebe špínu minulých bojů. Chvíli pak putovali lesem stále mlčky, přemýšleli, zvažovali, truchlili.<br>
+            Po nějakém čase dorazili k prvním osadám.<br>
+            A tady se jejich cesta rozdělila. Ač bratři, každý z nich šel za tím, co jeho srdce táhlo nejvíce.<br>
+            Jererigan, jemuž čest je jeho životem, z bratrů jediný který se těšil boji, vydal se na válečná kolbiště.<br>
+            Everald, šel hledat moudré tohoto světa, protože vědění je stejně mocné jako síla paží.<br>
+            A Dekoras, nejmladší, svou slávu si vydobýval svou zručností, ať již vyrobil zbraň či brnění, šperk nebo cokoliv jiného, dal do toho celé své srdce.</p>
+
+            <p>Tak se stalo, v roce Pádu, zanikl skoro nesmrtelný Dóm a jediní přeživší teď píší nové kapitoly dějin. Své vlastní.</p>
+
+            <div class="separator">***</div>
+        </div>
+        <div class="post-meta">
+            <span>Autor: Everald Del'Amaer</span>
+            <span>00:45</span>
+        </div>
+    </article>
+
+    <footer>
+        <p>Součást osobního archivu | Soubory uloženy na <a href="https://swra.cz">swra.cz</a></p>
+    </footer>
+</div>
+
+</body>
+</html>
